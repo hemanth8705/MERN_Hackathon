@@ -18,9 +18,18 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(morgan('dev'));
-app.use(cors({ origin: [process.env.FRONTEND_URL], credentials: true }));
+app.use(cors({
+    origin: process.env.FRONTEND_URL,
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'x-csrf-token'],
+    exposedHeaders: ['*', 'Authorization'],
+    maxAge: 600,
+    preflightContinue: false
+}));
 
-
+// Add this to handle OPTIONS requests
+app.options('*', cors());
 // Remove /api/v1 prefix
 app.use('/user', userRoutes);
 app.use('/courses', courseRoutes);

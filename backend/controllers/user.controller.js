@@ -8,11 +8,11 @@ import AppError from "../utils/error.utils.js";
 import sendEmail from "../utils/sendEmail.js";
 
 const cookieOptions = {
+    secure: true,
     httpOnly: true,
-    maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
-    secure: true, 
-    sameSite: 'none'
-}
+    sameSite: 'none',
+    maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
+};
 
 
 // Register  
