@@ -1,11 +1,5 @@
 # 🍳LMS Project
 
-## Description
-
-this is a lms project, that i have build while learning full stack development with my mentor. in this project i have build from scratch lots of feature like authentication, user management, course management, lecture management, lecture dashboard & admin dashboard and more...
-
-![LMS](https://res.cloudinary.com/dhwbyshmo/image/upload/v1695283699/project%20images/lms-home.png)
-
 ## Project Structure
 
 The project follows a well-organized structure:
@@ -65,12 +59,6 @@ LMS-Project/
 └──
 ```
 
-## Demo Video
-
-[![Watch Demo Video](https://res.cloudinary.com/dhwbyshmo/image/upload/v1697537153/project%20images/lms-admin-dashboard.png)](https://www.linkedin.com/feed/update/urn:li:activity:7119641188646727681)
-
-Click the image above to watch the demo video.
-
 
 ## Features
 
@@ -81,39 +69,6 @@ Click the image above to watch the demo video.
 - 🔒 **Subscription**: Users can enroll in courses by purchasing a 1-year subscription.
 - 🎥 **Lecture Dashboard**: Display course lectures, play videos, and view lecture descriptions.
 
-## API Endpoints
-
-### User Routes
-
-- `POST /register`: Register a new user.
-- `POST /login`: Log in a user.
-- `GET /logout`: Log out a user.
-- `GET /me`: Getting user profile info.
-- `POST /reset`: Sending email on user for reset password.
-- `POST /reset/:resetToken`: User resetting the password.
-- `POST /change-password`: User can change password using old and new password.
-- `POST /update/:id`: User can update their profile.
-
-### Course Routes
-
-- `GET /courses`: Get all courses.
-- `POST /courses`: Create a new course (Admin only).
-- `GET /courses/:id`: Get lectures for a specific course.
-- `PUT /courses/:id`: Update course details (Admin only).
-- `DELETE /courses/:id`: Delete a course (Admin only).
-
-### Payment Routes
-
-- `GET /razorpay-key`: Get Razorpay API key.
-- `POST /subscribe`: Buy a subscription.
-- `POST /verify`: Verify a subscription.
-- `POST /unsubscribe`: Cancel a subscription.
-- ...
-
-### Miscellaneous Routes
-
-- `POST /contact`: Contact us.
-- `GET /admin/stats/users`: Get user statistics (Admin only).
 
 ## Tech Stack
 
@@ -155,7 +110,7 @@ Follow these steps to set up the project on your local machine:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/gulshan07dev/lms-mern-project.git
+   git clone https://github.com/hemanth8705/MERN_Hackathon.git
    cd LMS
    ```
 
@@ -176,4 +131,4 @@ Follow these steps to set up the project on your local machine:
 
 ---
 
-_Made with ❤️ by [Gulshan Kumar](https://www.linkedin.com/in/gulshan-kumar-8293b9260/)_
+_Made with ❤️ by [Terli Hemanth] (https://in.linkedin.com/in/hemanth-terli-a50857271)_
